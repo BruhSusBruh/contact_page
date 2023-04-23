@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="contact_page.css" type="text/css">
+    <link href='https://fonts.googleapis.com/css?family=Alegreya Sans' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Alegreya Sans SC' rel='stylesheet'>
+    <title>
+        <p>Generic bookstore</p>
+    </title>
+    <div class="title_card">
+        <img src="LOGo_4)final.png" alt="logo">
+    </div>
+</head>
+
+<body>
+    <nav>
+        <div id="navigation_bar">
+            <div><button class="menu">HOME</button></div>
+            <div><button class="menu">BOOK SELECTION</button></div>
+            <div><button class="menu">ABOUT US</button></div>
+            <div><button class="menu">CONTACT US</button></div>
+        </div>
+        <div class="dropdown">
+            <button class="dropbtn">Dropdown</button>
+            <div class="dropdown-content">
+              <a href="#">Book selection</a>
+              <a href="#">Policies</a>
+              <a href="#">About us</a>
+              <a href="#">Church application</a>
+            </div>
+          </div> 
+    </nav>
+   
+    <nav>
+        <div class="contact_container">
+            <form action="action_page.php" method="post">
+                <label for="cont_purp">Contact Purpose:</label>
+                <select id="purpose" name="purpose">
+                    <option value="sell_opt">I want to sell books</option>
+                    <option value="buy_opt">I want to buy books</option>
+                </select>
+                <label for="fname">First Name</label>
+                    <input type="text" id="fname" name="firstname" placeholder="Your name...">
+            
+                <label for="lname">Last Name:</label>
+                    <input type="text" id="lname" name="lastname" placeholder="Your last name...">
+                <label for="email">Email:</label>
+                    <input type="text" id="email_input" name="mail" placeholder="Your email...">
+                <label for="po_address">Post Office:</label>
+                    <input type="text" id="p_office" name="p_office" placeholder="Post office address / code...">
+                <label for="phone_num">Phone Number:</label>
+                    <input type="text" id="phone_num" name="phone_num" placeholder="Your phone number here...">
+                
+                    <p>Contact preferences:</p>
+                <input type="checkbox" id="selection1" name="selection1" value="email">
+                    <label for="selection1">By email</label><br>
+                <input type="checkbox" id="selection2" name="selection2" value="phone">
+                    <label for="selection2">By phone</label><br>
+                <input type="checkbox" id="selection3" name="selection3" value="Boat">
+                    <label for="selection3">By letter (prefered)</label><br><br>
+                
+                <label for="weekly_news">Recieve weekly news?</label><br>
+                <input type="radio" id="yes_select" name="accept" value="yes" checked="checked">
+                    <label for="yes">Yes</label><br>
+                <input type="radio" id="no_select" name="refuse" value="no">
+                    <label for="no">No</label><br>
+                    <br>
+            
+                <label for="comment">Additional comment (Not require):</label>
+                <textarea id="comment" name="comment"  style="height:200px" placeholder="Type here..."></textarea>
+            
+                <input type="submit" value="Submit">
+                <input type="reset">
+              </form>
+        </div>
+    </nav>
+   
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="footer-col">
+                    <h4>About us</h4>
+                    <ul>
+                        <li><a href="#">Church of the Broken God</a></li>
+                        <li><a href="#">Affiliated programs</a></li>
+                        <li><a href="#">Mekhane's sermons</a></li>
+                        <li><a href="#"></a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Terms of service</h4>
+                    <ul>
+                        <li><a href="#">FAQ</a></li>
+                        <li><a href="#">Shipping</a></li>
+                        <li><a href="#">Returns</a></li>
+                        <li><a href="#">Order status</a></li>
+                        <li><a href="#">Payment options</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Privacy policies</h4>
+                    <ul>
+                        <li><a href="#">FAQ</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Contact us</h4>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <div><p>&copy; 1920 - 2025 Church of the Broken God / All rights reserve.</p></div>
+        </div>
+   </footer>
+        
+</body>
+
+</html>
